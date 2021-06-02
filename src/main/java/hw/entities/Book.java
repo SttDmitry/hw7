@@ -1,11 +1,14 @@
 package hw.entities;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 
 public class Book {
     private int id;
     private String title;
     private String info;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date date;
 
     public Book() {

@@ -29,7 +29,6 @@ public class BookController {
     @RequestMapping("/showForm")
     public String showSimpleForm(Model uiModel) {
         Book book = new Book();
-        book.setDate(new Date());
         uiModel.addAttribute("book", book);
         return "book-form";
     }
